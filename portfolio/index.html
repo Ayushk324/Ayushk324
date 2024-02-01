@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>personal portfolio website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/273ea366e5.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+       <div class="container">
+            <nav>
+               <img src="AK.png" class="logo">
+               <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+            <p>UI/UX Designer</p>
+            <h1>Hi, I'm <span>Ayush kumar</span><br>From India</h1>
+            </div>
+         </div>
+    </div>
+    <!---------about--------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="IMG-20240106-WA0034.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>A sentence is a combination of words put together to convey an idea,
+                    a fact, a question, a thought, a request or a command. Learn how to form 
+                    sentences in English with different parts, components.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Programming C</span><br>Basic things are learned and able to write algorithm for it.</li>
+                            <li><span>Web Development</span><br>Web App Development</li>
+                            <li><span>App Development</span><br>Basic things are leerned.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2022 - Current</span><br>web development</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2020</span><br>10th from Bal Mandir Sr Sec School</li>
+                            <li><span>2022</span><br>12th from Bal Mandir Sr Sec School</li>
+                            <li><span>2022 - Till Now</span><br>Diploma from BSAP</li>
+                        </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!------services------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web design</h2>
+                    <p>A sentence is a combination of words put together to convey an idea.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>UI/UX</h2>
+                    <p>A sentence is a combination of words put together to convey an idea.</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-------------portfolio------------>
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="netflix.png" width="600">
+                    <div class="layer">
+                        <h3>Netflix Clone</h3>
+                        <p>Netflix is a subscription-based that allows our members to watch TV shows 
+                        and movies on an internet-connected device. </p>
+                        <a href="https://aknetflixclone.netlify.app/"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="weather.png" width="600">
+                    <div class="layer">
+                        <h3>Weather Clone</h3>
+                        <p>Weather apps are incredibly useful tools that provide 
+                        up-to-date information about the weather in your area.</p>
+                        <a href="https://akweatherclone.netlify.app/"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="spotify.png" width="600">
+                    <div class="layer">
+                        <h3>Spotify Clone</h3>
+                        <p>Spotify is a Swedish audio streaming and media services provider founded on 23 April 2006 by Daniel Ek and Martin Lorentzon.</p>
+                        <a href="https://akspotifyclone.netlify.app/"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+    <!-------contact--------->
+    <div id="Contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fas fa-paper-plane"></i>ayushkumar324099@gmail.com</p>
+                    <p><i class="fas fa-phone-square-alt"></i>8750436659</p>
+                    <div class="social-icons">
+                        <a href="https://l.instagram.com/?u=https%3A%2F%2Fwww.facebook.com%2Fprofile.php%3Fid%3D100070912352262%26mibextid%3DkFxxJD&e=AT03RRM6yT-NpRSGyJEDG5rqxoNjvjzQPSxa6e4Yfpjbkwc1_gEAsN8YZBhus_mPZjnNhmZkpyM4Fk4b6FiBmz59QJN_NI9XhuKX7uKvh2m6yKtvrEs6LMub4uGBB3BoaoqoBGY"><i class="fab fa-facebook"></i></a>
+                        <a href="https://twitter.com/AyushKu91775814"><i class="fab fa-twitter-square"></i></a>
+                        <a href="https://www.instagram.com/ayush_k324/"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/ayush-kumar-ab06a02a3"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                    <a href="Resume-Ayush-Kumar.pdf" class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <input type="phone" name="Phone" placeholder="Your Phone No" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message....."></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>copyright <i class="fa-solid fa-copyright"></i> made with Ayush</p>
+        </div>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+
+        var sidemeu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemeu.style.right = "0";
+        }
+        function closemenu(){
+            sidemeu.style.right = "-200px";
+        }
+    
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycby0zUm9EDAmDCKYa6sXz52BUiHoCkSfzMGwUtmFL1ZgQmGtkgqZ034n_E8VX75ORalJ-A/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent sucessfully"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+
+</body>
+</html>
